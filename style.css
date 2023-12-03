@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+:root{
+    --veryDarkbluemain: hsl(217, 54%, 11%);
+    --veryDarkbluecard: hsl(216, 50%, 16%);
+    --veryDarkblueline: hsl(215, 32%, 27%);
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    height:100%;
+}
+
+body{
+    background-color: var(--veryDarkbluemain);
+    color: var(--white);
+    height:100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit";
+    font-size: 18px;
+}
+
+.card{
+    border-radius: 1em;
+    height: auto;
+    
+    background-color: var(--veryDarkbluecard);
+    display:flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.card-img{
+    max-height:100%;
+    content: url('images/image-equilibrium.jpg');
+    object-fit: cover;
+    border-radius: 1em;
+    height: 50%;
+    
+}
+
+.card-body{
+    height: auto;
+    padding: 1em .5em 0 .5em;
+    display:flex;
+    gap: 1em;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+h1{ 
+    margin:0;
+    height:auto;
+    width: auto;
+    display:inline-block;
+    line-height: 1;
+    font-size: 1.2em;
+    font-weight:600;
+}
+
+.card-body > p{
+    margin:0;
+    color: var(--softblue);
+    font-size: 15px;
+    font-weight: 300;
+    height:auto;
+    width: auto;
+    display:inline-block;
+    line-height: 1;
+}
+
+h2{
+    display:inline-flex;
+    align-items:center;
+    margin:0;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.logo{
+    height: auto;
+}
+
+h2.cyan{
+
+    color:var(--cyan);
+    font-weight: 600;
+    display:inline-flex;
+    height:auto;
+    width: auto;
+    line-height: 1;
+}
+
+h2.purple{
+    color:var(--softblue);
+    display:inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: center;
+    justify-content: space-between;
+
+}
+
+h2.purple > span{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.price-exp{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1em;
+    padding-top: 10px;
+    border-top: 1px solid var(--veryDarkblueline);
+    font-weight: 400;
+    font-size:15px;
+    height:auto;
+}
+
+.footer > img{
+    display: flex;
+    justify-content: flex-start;
+    height: 2em;
+    width: 2em;
+    border: solid 1px white;
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 300px) {
+ .card{
+    width: 80vw;
+ }
+}
+  
+@media screen and (min-width: 1000px) {
+    .card{
+        height: auto;
+        width: 280px;
+    }
+}
+
+
